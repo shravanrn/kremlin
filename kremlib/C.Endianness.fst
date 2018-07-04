@@ -2,7 +2,9 @@ module C.Endianness
 
 open FStar.HyperStack.ST
 open FStar.Kremlin.Endianness
-open FStar.Buffer
+open LowStar.Buffer
+
+module Buffer = LowStar.Buffer
 
 // Byte-level functions
 assume val htole16: UInt16.t -> Tot UInt16.t
